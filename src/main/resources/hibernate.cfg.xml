@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/reabotdatabasetest</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">metelka</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
+        <property name="show_sql">true</property>
+
+        <mapping resource="model/Discipline.hbm.xml" />
+        <mapping resource="model/Groups.hbm.xml" />
+        <mapping resource="model/Lessons.hbm.xml" />
+        <mapping resource="model/Schedules.hbm.xml" />
+        <mapping resource="model/Teachers.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

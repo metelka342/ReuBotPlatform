@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+
+    <class name="newDataModule.entities.Lessons" table="lessons">
+        <id name="idLesson" column="id"/>
+        <property name="idSchedule" column="id_schedule"/>
+        <property name="idDiscipline" column="id_discipline"/>
+        <property name="idTeacher" column="id_teacher"/>
+        <property name="lessonNum" column="number"/>
+        <property name="information" column="information"/>
+    </class>
+</hibernate-mapping>
